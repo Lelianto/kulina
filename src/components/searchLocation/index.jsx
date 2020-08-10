@@ -118,7 +118,6 @@ const useStyles = makeStyles((theme) => ({
 const SearchAddress = (props) => {
 	const classes = useStyles()
 	if (props.openAddress) {
-		console.log('props', props.resultAddress.length)
 		return (
 			<div>
 				<AppBar className={classes.backgroundAll}>

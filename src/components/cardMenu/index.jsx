@@ -27,15 +27,6 @@ const buttonColor1 = {
 	fontSize: '12px'
 }
 
-const StyledRating = withStyles({
-  iconFilled: {
-    color: '#ff6d75',
-  },
-  iconHover: {
-    color: '#ff3d47',
-  },
-})(Rating);
-
 const customIcons = {
   1: {
     icon: <SentimentVeryDissatisfiedIcon />,
