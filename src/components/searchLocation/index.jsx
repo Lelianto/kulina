@@ -111,7 +111,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 	supportGoogle: {
 		position: 'relative',
-    bottom: '-245px'
+    bottom: '-150px'
 	}
 }));
 

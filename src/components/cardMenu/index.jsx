@@ -118,7 +118,19 @@ const MediaCard = (props) => {
 							/>
 							<Typography className={classes.fontTitle}>Roasted Chicken with Scramble Egg</Typography>
 							<Typography className={classes.fontSub} variant="body2" color="textSecondary" component="p">
-								by Kulina &middot; Uptown Lunch
+								by Kulina &middot;  
+								<span>
+									{
+										props.day?
+										<span>
+											Uptown Lunch
+										</span>
+										:
+										<span>
+											Lunar Dinner
+										</span>
+									}
+								</span>
 							</Typography>
 						</CardContent>
 					</CardActionArea>

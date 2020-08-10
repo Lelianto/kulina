@@ -83,7 +83,7 @@ class HomePage extends Component {
 	}
 	handleSearch = _.debounce(e => {
 		let search = e
-		let limit = 5
+		let limit = 3
 		if (search) {
 			axios.get(`https://api.locationiq.com/v1/autocomplete.php?key=416a4b95f299db&q=${search}&limit=${limit}`)
 				.then((response)=>{
@@ -134,7 +134,7 @@ class HomePage extends Component {
 				<DayNightMenu open={this.state.open} day={this.state.day} handleDayNight={(e)=>this.handleDayNight(e)}/>
 				<SearchAddress openAddress={this.state.openAddress} handleClose={()=>this.handleClose()} resultAddress={this.state.resultAddress} handleChange={(e)=>this.handleChange(e)} handleClick={(e)=>this.handleClick(e)}/>
 				<ChoosenDate choosenDate={this.state.choosenDate}/>
-				<MediaCard handleCart={(e)=>this.handleCart(e)}/>
+				<MediaCard day={this.state.day} handleCart={(e)=>this.handleCart(e)}/>
 				<footer>
 					<CardSnakeBar item={this.state.item} />
 				</footer>
