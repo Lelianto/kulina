@@ -132,10 +132,12 @@ class HomePage extends Component {
 				<Header address={this.state.address} handleAddress={()=>this.handleAddress()}/>
 				<DatePicker choosenDate={this.state.choosenDate} listDate={this.state.listDate} handleChoosenDate={(e)=>this.handleChoosenDate(e)}/>
 				<DayNightMenu open={this.state.open} day={this.state.day} handleDayNight={(e)=>this.handleDayNight(e)}/>
-				<CardSnakeBar item={this.state.item} />
 				<SearchAddress openAddress={this.state.openAddress} handleClose={()=>this.handleClose()} resultAddress={this.state.resultAddress} handleChange={(e)=>this.handleChange(e)} handleClick={(e)=>this.handleClick(e)}/>
 				<ChoosenDate choosenDate={this.state.choosenDate}/>
 				<MediaCard handleCart={(e)=>this.handleCart(e)}/>
+				<footer>
+					<CardSnakeBar item={this.state.item} />
+				</footer>
 			</div>
 		);
 	}

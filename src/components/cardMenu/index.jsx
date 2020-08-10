@@ -12,7 +12,6 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Rating from '@material-ui/lab/Rating';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 import SentimentVeryDissatisfiedIcon from '@material-ui/icons/SentimentVeryDissatisfied';
 import SentimentDissatisfiedIcon from '@material-ui/icons/SentimentDissatisfied';
@@ -63,7 +62,7 @@ const useStyles = makeStyles({
   root: {
 		padding: '0px 20px',
 		height: '100vh',
-		marginBottom: '1150px'
+		marginBottom: '980px'
   },
   media: {
     height: 250,
