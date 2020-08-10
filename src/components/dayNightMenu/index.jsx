@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
 		backgroundColor: 'white',
 		position: 'fixed',
 		zIndex: '225',
-		marginTop: '100px'
+		marginTop: '110px'
 	},
 	shadowNone: {
 		boxShadow: 'none !important'

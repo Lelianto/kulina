@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
   grow: {
 		flexGrow: 1,
 		backgroundColor: 'white',
-		paddingTop: '160px',
+		paddingTop: '180px',
 		paddingLeft: '20px'
 	},
 	shadowNone: {

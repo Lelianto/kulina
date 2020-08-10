@@ -69,8 +69,11 @@ const Header = (props) => {
 								Alamat Pengiriman
 							</Grid>
 							<Grid item xs={12} className={[classes.fontSize16, classes.paddingAddress, classes.fontWeight600].join(' ')}>
-								Tokopedia Tower
+								<span onClick={()=>props.handleAddress()}>
+									{props.address}
+								</span>
 								<ExpandMoreIcon
+									onClick={()=>props.handleAddress()}
 									className={classes.arrowMore}
 								/>
 							</Grid>
