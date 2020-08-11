@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
   grow: {
 		flexGrow: 1,
 		position: 'fixed',
-		zIndex: '300',
+		zIndex: '500',
 		marginTop: '110px',
 		height:'100vh',
 		backgroundColor: 'transparent'
