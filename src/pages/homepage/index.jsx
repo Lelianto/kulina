@@ -135,9 +135,7 @@ class HomePage extends Component {
 				<SearchAddress openAddress={this.state.openAddress} handleClose={()=>this.handleClose()} resultAddress={this.state.resultAddress} handleChange={(e)=>this.handleChange(e)} handleClick={(e)=>this.handleClick(e)}/>
 				<ChoosenDate choosenDate={this.state.choosenDate}/>
 				<MediaCard day={this.state.day} handleCart={(e)=>this.handleCart(e)}/>
-				<footer>
-					<CardSnakeBar item={this.state.item} />
-				</footer>
+				<CardSnakeBar item={this.state.item} />
 			</div>
 		);
 	}

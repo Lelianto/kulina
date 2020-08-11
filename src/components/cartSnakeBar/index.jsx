@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
 import {thousandsSeparators} from 'currency-thousand-separator';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
@@ -49,7 +49,6 @@ const CardSnakeBar = (props) => {
 	if(item.length===0) {
 		return (
 			<div>
-
 			</div>
 		)
 	} else {
@@ -60,7 +59,7 @@ const CardSnakeBar = (props) => {
 			totalPrice += data.price
 		})
 		return (
-			<AppBar className='cart'>
+			<BottomNavigation className='cart'>
 				<Card className='cart-data'>
 					<CardActions className={classes.padd16}>
 						<Typography className={classes.fontTitle}>{totalItem} Items | Rp {thousandsSeparators(totalPrice).split(',').join('.')}</Typography>
@@ -71,7 +70,7 @@ const CardSnakeBar = (props) => {
 						<ChevronRightIcon className={classes.arrowRight}/>
 					</CardActions>
 				</Card>
-			</AppBar>
+			</BottomNavigation>
 		);
 	}
 }
