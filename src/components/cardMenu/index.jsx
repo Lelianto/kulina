@@ -62,7 +62,7 @@ const useStyles = makeStyles({
   root: {
 		padding: '0px 20px',
 		height: '100vh',
-		marginBottom: '110vh'
+		marginBottom: '100vh'
   },
   media: {
     height: 250,
